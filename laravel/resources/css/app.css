@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+/* For active menu item */
+.sidebar ul li>a.active {
+    @apply dark:bg-gray-600 bg-gray-200
+}
+
+.sidebar button[aria-expanded=true]>svg:nth-child(3) {
+    transform: rotate(0);
+}
